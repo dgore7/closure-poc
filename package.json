@@ -1,0 +1,17 @@
+{
+  "name": "closure-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ./index.js > out.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-closure-compiler": "^20210406.0.0",
+    "google-closure-library": "^20210406.0.0"
+  }
+}

@@ -1,0 +1,185 @@
+COMPILATION FAILED - exit code: 44
+java -jar /Users/david.gorelik/Repos/closure-poc/node_modules/google-closure-compiler-java/compiler.jar --js=lib/**.impl.java.js --compilation_level=SIMPLE --js_output_file=./out.js --debug=true --dependency_mode=SORT_ONLY
+
+lib/boulangerie-j2cl/tasty/js/json/JsJsonObjectHelper.impl.java.js:8:24: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "elemental2.core.JsObject.$Overlay$impl" never defined.
+  8| let JsObject_$Overlay = goog.forwardDeclare('elemental2.core.JsObject.$Overlay$impl');
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/json/JsJsonObjectHelper.impl.java.js:130:22: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "elemental2.core.JsObject.$Overlay$impl" never defined.
+  130|   JsObject_$Overlay = goog.module.get('elemental2.core.JsObject.$Overlay$impl');
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:18:15: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "elemental2.dom.DomGlobal.$Overlay$impl" never defined.
+  18| let $Overlay = goog.forwardDeclare('elemental2.dom.DomGlobal.$Overlay$impl');
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:19:24: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "elemental2.dom.FormData.$Overlay$impl" never defined.
+  19| let FormData_$Overlay = goog.forwardDeclare('elemental2.dom.FormData.$Overlay$impl');
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:20:27: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "elemental2.dom.RequestInit.$Overlay$impl" never defined.
+  20| let RequestInit_$Overlay = goog.forwardDeclare('elemental2.dom.RequestInit.$Overlay$impl');
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:21:24: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "elemental2.dom.Response.$Overlay$impl" never defined.
+  21| let Response_$Overlay = goog.forwardDeclare('elemental2.dom.Response.$Overlay$impl');
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:284:13: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "elemental2.dom.DomGlobal.$Overlay$impl" never defined.
+  284|   $Overlay = goog.module.get('elemental2.dom.DomGlobal.$Overlay$impl');
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:285:22: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "elemental2.dom.FormData.$Overlay$impl" never defined.
+  285|   FormData_$Overlay = goog.module.get('elemental2.dom.FormData.$Overlay$impl');
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:286:25: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "elemental2.dom.RequestInit.$Overlay$impl" never defined.
+  286|   RequestInit_$Overlay = goog.module.get('elemental2.dom.RequestInit.$Overlay$impl');
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/boulangerie-j2cl/tasty/js/net/JsHttpClient.impl.java.js:287:22: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "elemental2.dom.Response.$Overlay$impl" never defined.
+  287|   Response_$Overlay = goog.module.get('elemental2.dom.Response.$Overlay$impl');
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/Any$$Overlay.impl.java.js:3:9: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "jsinterop.base.Js$impl" never defined.
+  3| let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/Any$$Overlay.impl.java.js:84:7: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "jsinterop.base.Js$impl" never defined.
+  84|   Js = goog.module.get('jsinterop.base.Js$impl');
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsArrayLike$$Overlay.impl.java.js:5:21: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "jsinterop.base.InternalJsUtil$impl" never defined.
+  5| let InternalJsUtil = goog.forwardDeclare('jsinterop.base.InternalJsUtil$impl');
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsArrayLike$$Overlay.impl.java.js:6:9: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "jsinterop.base.Js$impl" never defined.
+  6| let Js = goog.forwardDeclare('jsinterop.base.Js$impl');
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsArrayLike$$Overlay.impl.java.js:53:19: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "jsinterop.base.InternalJsUtil$impl" never defined.
+  53|   InternalJsUtil = goog.module.get('jsinterop.base.InternalJsUtil$impl');
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsArrayLike$$Overlay.impl.java.js:54:7: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "jsinterop.base.Js$impl" never defined.
+  54|   Js = goog.module.get('jsinterop.base.Js$impl');
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsConstructorFn$$Overlay.impl.java.js:4:21: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "jsinterop.base.InternalJsUtil$impl" never defined.
+  4| let InternalJsUtil = goog.forwardDeclare('jsinterop.base.InternalJsUtil$impl');
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsConstructorFn$$Overlay.impl.java.js:28:19: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "jsinterop.base.InternalJsUtil$impl" never defined.
+  28|   InternalJsUtil = goog.module.get('jsinterop.base.InternalJsUtil$impl');
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsPropertyMap$$Overlay.impl.java.js:3:21: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "jsinterop.base.InternalJsUtil$impl" never defined.
+  3| let InternalJsUtil = goog.forwardDeclare('jsinterop.base.InternalJsUtil$impl');
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/google_jsinterop_base-j2cl/jsinterop/base/JsPropertyMap$$Overlay.impl.java.js:82:19: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "jsinterop.base.InternalJsUtil$impl" never defined.
+  82|   InternalJsUtil = goog.module.get('jsinterop.base.InternalJsUtil$impl');
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/java/lang/Class.impl.java.js:10:18: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "javaemul.internal.Constructor" never defined.
+  10| let Constructor = goog.forwardDeclare('javaemul.internal.Constructor');
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/java/lang/Class.impl.java.js:157:16: 
+Originally at:
+lib/jre/java/lang/Class.native_js:15:0: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "goog.reflect" never defined.
+  15| const Reflect = goog.require('goog.reflect');
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Casts.impl.java.js:8:18: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "javaemul.internal.Constructor" never defined.
+  8| let Constructor = goog.forwardDeclare('javaemul.internal.Constructor');
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Constructor$$Overlay.impl.java.js:3:20: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "javaemul.internal.Constructor" never defined.
+  3| const Constructor = goog.require('javaemul.internal.Constructor');
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Constructor$$Overlay.impl.java.js:8:24: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "nativebootstrap.Util" never defined.
+  8| let $Constructor_Util = goog.forwardDeclare('nativebootstrap.Util');
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Constructor$$Overlay.impl.java.js:65:22: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "nativebootstrap.Util" never defined.
+  65|   $Constructor_Util = goog.module.get('nativebootstrap.Util');
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Constructor$Util$$Overlay.impl.java.js:3:26: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "nativebootstrap.Util" never defined.
+  3| const $Constructor_Util = goog.require('nativebootstrap.Util');
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Enums$BoxedComparableLightEnum.impl.java.js:9:18: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "javaemul.internal.Constructor" never defined.
+   9| let Constructor = goog.forwardDeclare('javaemul.internal.Constructor');
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Enums$BoxedLightEnum.impl.java.js:7:18: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "javaemul.internal.Constructor" never defined.
+  7| let Constructor = goog.forwardDeclare('javaemul.internal.Constructor');
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Enums.impl.java.js:6:14: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "goog.reflect" never defined.
+  6| let reflect = goog.forwardDeclare('goog.reflect');
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Enums.impl.java.js:10:18: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "javaemul.internal.Constructor" never defined.
+  10| let Constructor = goog.forwardDeclare('javaemul.internal.Constructor');
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/Enums.impl.java.js:104:12: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "goog.reflect" never defined.
+  104|   reflect = goog.module.get('goog.reflect');
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/LongUtils$NativeLong$$Overlay.impl.java.js:3:30: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "nativebootstrap.Long" never defined.
+  3| const $LongUtils_NativeLong = goog.require('nativebootstrap.Long');
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/LongUtils.impl.java.js:8:28: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "nativebootstrap.Long" never defined.
+  8| let $LongUtils_NativeLong = goog.forwardDeclare('nativebootstrap.Long');
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/LongUtils.impl.java.js:188:26: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "nativebootstrap.Long" never defined.
+  188|   $LongUtils_NativeLong = goog.module.get('nativebootstrap.Long');
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/nativebootstrap/Long.impl.java.js:21:13: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "goog.math.Long" never defined.
+  21| const Long = goog.require('goog.math.Long');
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/nativebootstrap/Util.impl.java.js:21:16: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "goog.reflect" never defined.
+  21| const Reflect = goog.require('goog.reflect');
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/nativebootstrap/Util.impl.java.js:22:12: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "jre" never defined.
+  22| const jre = goog.require('jre');
+                  ^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/nativebootstrap/Util.impl.java.js:23:20: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "javaemul.internal.Constructor" never defined.
+  23| const Constructor = goog.require('javaemul.internal.Constructor');
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/vmbootstrap/Arrays.impl.java.js:21:12: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "java.lang.Class" never defined.
+  21| let Class = goog.forwardDeclare('java.lang.Class');
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/vmbootstrap/Arrays.impl.java.js:22:20: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "javaemul.internal.Constructor" never defined.
+  22| const Constructor = goog.require('javaemul.internal.Constructor');
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/vmbootstrap/Arrays.impl.java.js:24:21: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE_FOR_FORWARD_DECLARE] Required namespace "java.lang.Object" never defined.
+  24| let JavaLangObject = goog.forwardDeclare('java.lang.Object');
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/vmbootstrap/Arrays.impl.java.js:477:12: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "java.lang.Class" never defined.
+  477|     Class = goog.module.get('java.lang.Class');
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+lib/jre/javaemul/internal/vmbootstrap/Arrays.impl.java.js:478:21: ERROR - [JSC_MISSING_MODULE_OR_PROVIDE] Required namespace "java.lang.Object" never defined.
+  478|     JavaLangObject = goog.module.get('java.lang.Object');
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+44 error(s), 0 warning(s)
+
+
+
