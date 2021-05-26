@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "node ./index.js > out.txt",
+    "start": "open ./build/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
