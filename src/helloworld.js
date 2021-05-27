@@ -2,118 +2,76 @@ goog.module("helloworld");
 
 // goog.ENABLE_DEBUG_LOADER = true
 const Throwable = goog.require("java.lang.Throwable")
-const ConfigBuilder = goog.require(
-  "tasty.js.config.DaggerApplicationConfig.Builder"
-);
-const InvalidSessionHandler = goog.require(
-  "com.dough.net.InvalidSessionHandler"
-);
-const TwStagingEnvironment = goog.require(
-  "com.dough.tw.config.TwStagingEnvironment"
-);
-const JsHttpExceptionHandler$Callback = goog.require(
-  "tasty.js.net.JsHttpExceptionHandler.Callback"
-);
-const AsyncTaskServiceErrorListener = goog.require(
-  "com.dough.util.AsyncTaskService.ErrorListener"
-);
-
-const InternetChecker = goog.require(
-  "com.dough.ui.net.UiHttpExceptionHandler.InternetChecker"
-);
-
+const ConfigBuilder = goog.require("tasty.js.config.DaggerApplicationConfig.Builder")
+const InvalidSessionHandler = goog.require("com.dough.net.InvalidSessionHandler")
+const TwStagingEnvironment = goog.require("com.dough.tw.config.TwStagingEnvironment")
+const JsHttpExceptionHandler$Callback = goog.require("tasty.js.net.JsHttpExceptionHandler.Callback")
+const AsyncTaskServiceErrorListener = goog.require("com.dough.util.AsyncTaskService.ErrorListener");
+const InternetChecker = goog.require("com.dough.ui.net.UiHttpExceptionHandler.InternetChecker");
 const PlatformDetails = goog.require("com.dough.service.PlatformDetails");
 
 class WebInvalidSessionHandler extends InvalidSessionHandler {
-  m_onInvalidSession__() {
+  onInvalidSession() {
     alert("Session has been invalidated");
   }
 }
 
 class HttpExceptionCallback extends JsHttpExceptionHandler$Callback {
-  m_logWarning__java_lang_String__java_lang_Throwable(message) {
-    console.warn(message);
+  logWarning(message, exception) {
+    console.warn(message, exception);
   }
-  m_logRuntimeException__java_lang_String__java_lang_RuntimeException(message) {
-    console.error(message);
+  logRuntimeException(message, exception) {
+    console.error(message, exception);
   }
-  m_notifyUserOfNetWorkIssue__() {
+  notifyUserOfNetWorkIssue() {
     alert("Network issue");
   }
-  m_notifyUserOfPossibleIpBan__() {
+  notifyUserOfPossibleIpBan() {
     alert("IP Banned 🔨");
   }
 }
 
 class WebAsyncTaskServiceErrorListener extends AsyncTaskServiceErrorListener {
-  m_onError__java_lang_Object__java_lang_Object__java_lang_Throwable(
-    context,
-    target,
-    e
-  ) {
-    console.error(e.getMessage());
+  onErrorException(context, target, e) {
+    console.error("Async Exception", e);
   }
-  m_onError__java_lang_Object__com_dough_util_RequestState(context, state) {
+  onErrorRequestState(context, state) {
     console.error(state.errorMessage);
   }
 }
 
 class WebPlatformDetails extends PlatformDetails {
-  m_getName__() {
-    return window.navigator.platform;
+  getName() {
+    return "WBT2"
   }
-  m_getVersion__() {
-    return window.navigator.appVersion;
-  }
-  m_toSourceIdentifier__() {
-    return `${this.m_getName__()};${this.m_getVersion__()}`;
+  getVersion() {
+    return "Alpha"
   }
 }
 
 class WebInternetChecker extends InternetChecker {
-  m_isInternetConnectionOkay__() {
+  isInternetConnectionOkay() {
     return navigator.onLine;
   }
 }
 
-function buildConfig() {
-  const config = new ConfigBuilder();
-
-  config.m_invalidSessionHandler__com_dough_net_InvalidSessionHandler(
-    new WebInvalidSessionHandler()
-  );
-
-  config.m_httpExceptionHandlerCallback__tasty_js_net_JsHttpExceptionHandler_Callback(
-    new HttpExceptionCallback()
-  );
-
-  config.m_asyncExceptionHandler__com_dough_util_AsyncTaskService_ErrorListener(
-    new WebAsyncTaskServiceErrorListener()
-  );
-
-  config.m_twEnvironment__com_dough_tw_config_TwEnvironment(
-    new TwStagingEnvironment()
-  );
-
-  config.m_platformDetails__com_dough_service_PlatformDetails(
-    new WebPlatformDetails()
-  );
-
-  config.m_internetChecker__com_dough_ui_net_UiHttpExceptionHandler_InternetChecker(
-    new WebInternetChecker()
-  );
-
-  return config.m_build__();
-}
-
-const config = buildConfig();
+const config = new ConfigBuilder()
+  .invalidSessionHandler(new WebInvalidSessionHandler())
+  .httpExceptionHandlerCallback(new HttpExceptionCallback())
+  .asyncExceptionHandler(new WebAsyncTaskServiceErrorListener())
+  .twEnvironment(new TwStagingEnvironment())
+  .platformDetails(new WebPlatformDetails())
+  .internetChecker(new WebInternetChecker())
+  .build()
 
 console.log(config);
 
-const loginManager = config.m_getTwLoginManager__()
-const sessionManager = config.m_getTwSessionManager__()
+const loginManager = config.twLoginManager
+const sessionManager = config.twSessionManager
 
 console.log(loginManager)
 
 const request = loginManager.m_login__java_lang_String__java_lang_String("devqa250", "devqa250")
-request.m_addCompleteListener__com_dough_util_RequestState_CompleteListener(console.log)
+console.log("request", request)
+
+request.addCompleteListener((rs) => console.log("Login completed", rs.detailedStatus))
